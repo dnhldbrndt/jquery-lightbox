@@ -1,0 +1,97 @@
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	background-color: #D7F0FF;
+ 	margin: 0;
+}
+.text {
+	padding: 5px;
+	margin: 5px;
+}
+.container {
+ 
+	position: relative;
+	height:100vh;
+	overflow: hidden;
+}
+
+.backdrop {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+	background: black;
+	opacity: .0;
+	filter: alpha(opacity=0);
+	z-index: 50;
+	display: none;
+}
+
+.box {
+	position: absolute;
+ 	max-height: 100%;
+	background: #CCCCCC;
+	z-index: 51;
+	padding: 5px;
+	left: 25%;
+	-webkit-broder-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 5px #444444;
+	box-shadow: 0px 0px 5px #444444;
+	display: none;
+}
+
+.close {
+	float: right;
+	margin-right: 6px;
+	cursor: pointer;	
+}
+
+.img-gallery {
+	
+}
+
+#g {
+	/* background: yellow; */
+}
+#g img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#gallery {
+	height: 250px;
+}
+#img-nav {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+ 
+}
+#img-nav div {
+	padding: 4px;
+	background-color: #229EE3;
+	color: #F7F7F7;
+	border-radius: 2px;
+}
+#img-nav div:hover {
+	background-color: #165FCF;
+
+}
+#prev {	cursor: pointer;	}
+
+#next {	cursor: pointer;	}
+
+#full { cursor: pointer;	}
+
+#download { cursor: pointer;	}
+
+#share { cursor: pointer;}
