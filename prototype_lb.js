@@ -4,7 +4,7 @@
 		gallery_current(current);
 
 		$('.lightbox').click(function() {
-			$('.backdrop, .box').animate({'opacity':'0.50'}, 300, 'linear');
+			$('.backdrop, .box').animate({'opacity':'0.90'}, 300, 'linear');
 			$('.box').animate({'opacity':'1.00'}, 300, 'linear');
 			$('.backdrop, .box').css('display', 'block');
 		});
