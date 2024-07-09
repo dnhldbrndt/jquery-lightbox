@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 async function fetchImages() {
     try {
-        const response = await fetch('/path/to/your/images.json');
+        const response = await fetch('images.json');
         const data = await response.json();
         window.images = data.images;
         window.MAX = images.length - 1;
